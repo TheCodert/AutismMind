@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism Mind | Criador</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
+    <link rel="stylesheet" href="creator_style.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="background-box"></div>
+    <aside class="top-sidebar">
+        <button id="bntSave" class="custom-button">
+            <span>
+                <i class="material-symbols-outlined"> save </i>
+                <span class="label-text">Salvar</span>
+            </span>
+        </button>
+        <button id="bntFavorite" class="custom-button">
+            <span>
+                <i class="material-symbols-outlined"> favorite </i>
+                <span class="label-text">Favoritar</span>
+            </span>
+        </button>
+        <button id="bntDelete" class="custom-button">
+            <span>
+                <i class="material-symbols-outlined"> delete </i>
+                <span class="label-text">Excluir</span>
+            </span>
+        </button>
+        <button id="bntQuit" class="custom-button">
+            <span>
+                <i class="material-symbols-outlined"> arrow_back </i>
+                <span class="label-text">Voltar</span>
+            </span>
+        </button>       
+    </aside>
+    
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img class="logo-img" src="img/logo-small.png" alt="pfp">
+        </header>
+        <nav>
+            <button id="add-button">
+                <span>
+                    <i class="material-symbols-outlined"> token </i>
+                </span>
+            </button>
+            <button id="add-text-button">
+                <span>
+                    <i class="material-symbols-outlined"> title </i>
+                </span>
+            </button>
+            <button id="upload-image-button">
+                <span>
+                    <i class="material-symbols-outlined"> image </i>
+                </span>
+            </button>
+            <button id="insert-gif">
+                <span>
+                    <i class="material-symbols-outlined"> GIF_box </i>
+                </span>
+            </button>
+            <button id="bntTrash">
+                <span>
+                    <i class="material-symbols-outlined"> delete </i>
+                </span>
+            </button>
+        </nav>
+        <button id="bntLogout" class="logout-bnt">
+            <span>
+                <i class="material-symbols-outlined"> logout </i>
+            </span>
+        </button> 
+    </aside>
+    <div id="inspector" class="inspector">
+        <button id="toggle-inspector" class="toggle-button">MERDA</button>
+        <h2>Inspeção do Botão</h2>
+        <div>
+            <label for="sound-file">Escolha um som:</label>
+            <input type="file" accept="audio/mpeg, audio/wav, audio/ogg" id="sound-file">
+        </div>
+        <div>
+            <label for="button-image">Imagem do Botão:</label>
+            <input type="file" accept="image/*" id="button-image">
+        </div>
+        <div>
+            <label for="image-width">Largura:</label>
+            <input type="number" id="image-width" min="10" step="10" value="100">
+        </div>
+        <div>
+            <label for="image-height">Altura:</label>
+            <input type="number" id="image-height" min="10" step="10" value="100">
+        </div>
+        <button id="save-button" class="custom-button">Salvar Botão</button>
+        <button id="delete-button" class="custom-button">Apagar Botão</button>
+    </div>
+    <div class="white-rectangle"></div>
+    <div id="image-inspector" class="inspector-Image">
+        <button id="toggle-image-inspector" class="toggle-button">Fechar</button>
+        <h2>Inspeção de Imagem</h2>
+        <div>
+            <label for="image-width">Largura:</label>
+            <input type="number" id="image-width-input" value="100">
+        </div>
+        <div>
+            <label for="image-height">Altura:</label>
+            <input type="number" id="image-height-input" value="100">
+        </div>
+        <button id="save-image-button" class="custom-button">Salvar Botão</button>
+        <button id="delete-image-button" class="custom-button">Apagar Botão</button>
+    </div>
+    <audio id="audio-player"></audio>
+    <script src="creator_script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>

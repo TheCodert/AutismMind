@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href='https://fonts.googleapis.com/css?family=Alexandria' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Autism Mind</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="background-box"></div>
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img class="logo-img" src="img/logo.png" alt="pfp">
+        </header>
+
+        <nav>
+            <button id="bntPlan">
+                <span>
+                    <i class="material-symbols-outlined"> note </i>
+                    <span>Planos</span>
+                </span>
+            </button>
+
+            <button id="bntFav">
+                <span>
+                    <i class="material-symbols-outlined"> star </i>
+                    <span>Favoritos</span>
+                </span>
+            </button>
+
+            <button id="bntGlobal">
+                <span>
+                    <i class="material-symbols-outlined"> language </i>
+                    <span>Global</span>
+                </span>
+            </button>
+
+            <button id="bntProfile">
+                <span>
+                    <i class="material-symbols-outlined"> person </i>
+                    <span>Sua Conta</span>
+                </span>
+            </button>
+
+            <button id="bntTrash">
+                <span>
+                    <i class="material-symbols-outlined"> delete </i>
+                    <span>Lixeira</span>
+                </span>
+            </button>
+ 
+        </nav>
+        <button id="bntLogout" class="logout-bnt">
+            <span>
+                <i class="material-symbols-outlined"> logout </i>
+                <span>Sair</span>
+            </span>
+        </button> 
+    </aside>
+
+    <main class="main">
+       <h1>Bem vindo, <span id="username-placeholder">sua conta</span>! </h1> 
+        <p>Estávamos esperando por você</p>
+
+        <script>
+            // Recuperar o nome de usuário do armazenamento local
+            var storedUsername = localStorage.getItem("username")
+        
+            if (storedUsername) {
+                // Atualizar o elemento <span> com o nome de usuário
+                document.getElementById("username-placeholder").textContent = storedUsername;
+            }
+        </script>
+    </main>
+</body>
+</html>
